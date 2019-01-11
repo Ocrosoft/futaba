@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			双叶一下，你就知道
+		</title>
+		<link rel="icon" href="img/icon.png" sizes="32x32">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="head">
+			<div class="bg" style="background-image:url(img/Aobuta_Anime_Teaser1.png);">
+			</div>
+			<div>
+				<div class="form">
+					<div class="logo">
+						<img id="logo" src="img/logo.png">
+					</div>
+					<form onsubmit="return false;">
+						<input type="text" id="kw" maxlength="100" autocomplete="off"><input type="button" value="双叶一下" class="btn">
+					</form>
+				</div>
+			</div>
+			<div id="s_wrap" style="height: 390px; width: 800px; background: rgba(255,255,255,0.5); margin-top: 40px;">
+				<img id="thumb"/>
+				<h2 id="title"></h2>
+				<div id="content">
+				</div>
+			</div>
+			<div class="bottom">
+				<span>©2019&nbsp;shuangye.wiki, futaba-rio.com&nbsp;</span><br>
+				<span>欢迎提供素材与改进建议(ocrosoft@ocrosoft.com)</span>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script>
+			document.write('<script src="js/keywords.js?' + Math.random() + '"><\/script>'); 
+			document.write('<script src="js/index.js?' + Math.random() + '"><\/script>'); 
+		</script>
+	</body>
+
+</html>

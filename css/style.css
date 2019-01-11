@@ -1,0 +1,117 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    zoom: 1;
+}
+
+.form {
+    width: 641px;
+    margin: 0 auto 0 auto;
+}
+
+.logo {
+    min-height: 225px;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#kw {
+	width: 520px!important;
+    padding: 10px 9px 10px 7px;
+    border: 0;
+    line-height: 20px;
+	outline: none;
+}
+
+input {
+	display: inline;
+	font: 16px/18px arial;
+}
+
+.btn {
+    width: 100px;
+    line-height: 40px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #38f;
+	outline: none;
+}
+
+#s_wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bottom {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    bottom: 12px;
+    left: 0;
+    overflow: hidden;
+    margin: 0;
+	text-align: center;
+	color: #fff;
+}
+
+#head {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 768px;
+    cursor: default;
+}
+
+#logo {
+	width: 200px;
+	cursor: default;
+}
+
+#title {
+	padding: 6px 10px 6px 10px;
+	font-size: 20px;
+}
+
+#content {
+	padding: 0px 10px 0px 10px;
+	line-height: 25px;
+	overflow-y: auto;
+	height: 330px;
+	margin: 0px;
+}
+
+#content>p {
+	margin: 0px;
+}
+
+#thumb {
+	max-height: 390px;
+    max-width: 20%;
+    float: right;
+}
+
+span.ggl {
+	opacity: 0.05;
+}
