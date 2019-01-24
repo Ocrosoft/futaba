@@ -93,4 +93,12 @@ $(document).ready(function() {
 	img.onload = function() {
 		useGoogle = true;
 	};
+	// 一定时间后如果没有加载完成，取消加载（默认的超时时间太长了）
+	setTimeout(function() {
+		img.onload = function() { 
+			useGoogle = false;
+	                //console.log('无法连接 google，使用百度。');
+		}
+		img.src = "img/icon.png";
+	}, 750);
 });
