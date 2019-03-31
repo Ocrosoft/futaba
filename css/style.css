@@ -17,6 +17,20 @@ html, body {
     zoom: 1;
 }
 
+.bg-next {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    z-index: -11;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    zoom: 1;
+}
+
 .form {
     width: 641px;
     margin: 0 auto 0 auto;

@@ -1,3 +1,6 @@
+var bg = $('.bg');
+var bg_next = $('.bg-next');
+
 function ChangeBackground(i) {
 	// 背景图中翔子小姐会出现两个(年龄)，但是最后一张会导致图片不好(对)看(称)，所以去掉
 	if (i > 5) {
@@ -6,10 +9,31 @@ function ChangeBackground(i) {
 	var img = new Image();
 	img.src = 'img/Aobuta_Anime_Teaser' + i + '.png';
 	img.onload = function() {
-		$('.bg').css('background-image', 'url(img/Aobuta_Anime_Teaser' + i++ + '.png');
+		bg_next.css('background-image', 'url(img/Aobuta_Anime_Teaser' + i++ + '.png');
+		bg_next.css('opacity', 1);
 		setTimeout(function() {
-			ChangeBackground(i);
-		}, 5000);
+			var opacity = 1;
+			var itv = setInterval(function() {
+				opacity -= 0.01;
+				if (opacity <= 0)
+					opacity = 0;
+				
+				bg.css('opacity', opacity);
+				
+				if (opacity <= 0) {
+					bg.removeClass('bg').addClass('bg-next');
+					bg_next.removeClass('bg-next').addClass('bg');
+					bg = $('.bg');
+					bg_next = $('.bg-next');
+					
+					setTimeout(function() {
+						ChangeBackground(i);
+					}, 4500);
+					
+					clearInterval(itv);
+				}
+			}, 1);
+		}, 500);
 	};
 }
 
